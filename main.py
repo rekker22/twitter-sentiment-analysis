@@ -60,7 +60,7 @@ no = int(input('Number of Tweets to Analyse: '))
 
 tweets = tweepy.Cursor(api.search, q=f'{search_tag} -filter:retweets', tweet_mode='extended', lang='en').items(no)
 
-print('\nANALYSING TWEETS...')
+print('\nANALYSING TWEETS....')
 
 analysed_tweets = calculate_sentiment_VADER(tweets)
 
